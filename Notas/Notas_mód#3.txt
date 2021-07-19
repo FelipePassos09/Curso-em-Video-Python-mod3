@@ -1,0 +1,22 @@
+Aula #16 - Tuplas
+
+Tuplas são variáveis que armazenam mais de um objeto. Elas são imutáveis e possuem meios para ser realizado fatiamento.
+
+tupla = ('tupla1','tupla2', 'tupla3','tuplan')
+
+    *Podem ser declaradas com ou sem parenteses, porém sempre são retornadas com os parentêses.
+
+Tal como uma lista, pode ser utilizado como um parâmetro para as repetições for e while.
+
+Podemos enumerar, somar e unir tuplas tal como:
+
+    tupla = ('tupla1','tupla2')
+    tupplaI = ('tupla3','tupla4')
+    tuplasoma = ('tupla' + 'tuplaI')
+    print(tuplasoma) => ('tupla1','tupla2','tupla3','tupla4')
+
+O mesmo vale para index
+
+Nós podemos apagar uma váriável com a função del
+    del(tupla)
+
