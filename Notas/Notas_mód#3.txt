@@ -20,3 +20,29 @@ O mesmo vale para index
 Nós podemos apagar uma váriável com a função del
     del(tupla)
 
+É importante, porém, frisar que tuplas não podem ser alteradas durante a execução do cód. apenas direto em sua composição dentro do script.
+
+
+Aula#17 - Listas
+As listas, assim como as Tuplas, são variáveis compostas porém com listas podemos alterar os seus valores, diferente do que ocorre com as tuplas. Para criar umas lista basta substituir os parenteses '()' utilizados nas tuplas por colchetes '[]'.
+
+tupla = ('var1', 'var2', 'var3', 'var4', 'varN')
+lista = ['var1', 'var2', 'var3', 'var4', 'varN']
+
+Assim como em uma Tupla, nas listas podemos inserir mais valores, porém com a possibilidade de edição enquanto da execução.
+
+Podemos usar a maioria das fincionalidades de fatiamento conhecidas e, também, aplicar novas funções como os módulos .append, .insert. 
+
+    lista.append('newvalue') => aqui inserimos um valor na última posição conforme o módulo .append
+    lista.insert(n, 'newvalue') => já aqui inserimos um novo valor na posição n da lista. e deslocamos os demais em suas respectivas direções.
+
+Também podemos substituir um valor referenciando a lista e a posição onde queremos realizar a substituição. 
+
+    lista[n] = 'newvalue' => aqui estamos alterando o n valor da lista.
+
+Além disso podemos remover valores com as funções del, remove e pop.
+
+    .pop - se sem parâmetro ele remove o último item. Se informar um parâmetro ele remove o valor daquela posição.
+    .remove - remove o valor informado no parâmetro e elimina a primeira ocorrência daquele valor.
+
+Também podemos criar uma lista com função list(), porém é pouco usual.

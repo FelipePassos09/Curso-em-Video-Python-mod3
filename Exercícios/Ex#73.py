@@ -15,12 +15,15 @@ print(f'Os cinco primeiros são:\n')
 for pos,c in enumerate(tabela[0:5]):
     print(f'{pos+1}º colocado: {c}')
 print(f'\n{tab}')
+
 print('\nOs últimos colocados são:\n')
 for pos, c in enumerate(tabela[len(tabela)-4:]):
   print(f'{pos+1+(len(tabela)-4)}º colocado: {c}')
 print(f'\n{tab}')
+
 print('\nTimes em ordem alfabética:\n')
 for c in sorted(tabela):
   print(c)
 print(f'\n{tab}')
+
 print(f'\nA Chapecoense ficou em {tabela.index("Chapecoense")+1}º colocado.')
