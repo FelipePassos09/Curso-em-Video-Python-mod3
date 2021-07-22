@@ -19,6 +19,10 @@ while True:
   if cont == 'N':
     break
 
+
+lista.sort()
+
 print('Os números digitados foram: ', end=' ')
 for item in lista:
   print(item, end=' ')
+print()
