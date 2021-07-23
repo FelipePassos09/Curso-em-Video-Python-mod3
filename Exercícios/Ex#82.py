@@ -7,10 +7,12 @@ Ao final mostre o conteúdo das trẽs listas geradas.
 
 '''
 
+# Listas:
 lista = []
 lis_par = []
 lis_impar = []
 
+# Algoritmo:
 while True:
     val = int(input('Digite um número:\n'))
     if val in lista:
@@ -27,10 +29,23 @@ while True:
     if cont == 'N':
         break
 
+# Usando 'for':
+imp = list()
+par = list()
+
+for i in lista:
+    if i % 2 == 0:
+        par.append(i)
+    else:
+        imp.append(i)
+
+
+# Ordenando as listas:
 lista.sort()
 lis_impar.sort()
 lis_par.sort()
 
+# Respostas:
 print(f'\n\nLista completa:')
 for item in lista:
     print(item, end=' ')
@@ -43,3 +58,8 @@ print('\n\nLista Impares:')
 for item in lis_impar:
     print(item, end=' ')
 print('\n')
+
+
+# Usando 'for':
+print(f'Pares {par}.')
+print(f'Impares {imp}.')

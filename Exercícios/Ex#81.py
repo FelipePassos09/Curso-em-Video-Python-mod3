@@ -23,9 +23,14 @@ while True:
     if cont == 'N':
         break
 
-print(f'Resposta A: Foram inseridos {c} números na lista.')
+print(f'Resposta A: Foram inseridos {c} valores, mas apenas {len(lista)} números entraram na lista.')
+
 print(f'Resposta B:')
 lista.sort(reverse=True)
 for item in lista:
     print(item)
-print(f'Resposta C: O valor 5 foi digitato {lista.count(5)} vezes na lista.')
+
+if 5 in lista:
+    print(f'Resposta C: O valor 5 foi inserido {lista.count(5)} vezes na lista.')
+else:
+    print(f'Resposta C: O valor 5 não foi inserido.')
