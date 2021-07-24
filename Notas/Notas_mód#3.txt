@@ -46,3 +46,26 @@ Além disso podemos remover valores com as funções del, remove e pop.
     .remove - remove o valor informado no parâmetro e elimina a primeira ocorrência daquele valor.
 
 Também podemos criar uma lista com função list(), porém é pouco usual.
+
+Aula #18 - Listas (parte 2)
+
+Listas compostas.
+
+Podemos criar listas dentro de outras listas, neste caso teremos uma lista composta.
+
+    Ex. lista = [['João', 25], ['Pedro',32], ['Maria', 28], ['Felipe', 30]]
+
+Nesse exemplo vemos uma lista com outras 4 listas dentro dela.
+
+Podemos fazer uma cópia dos dados utilizando colchetes com apenas ':' (dois pontos) dentro:
+    Ex. lista.append(dados[:])
+    Isso é muito importante pois será imprescindível para diversças ações dentro de listas compostas.
+
+Outra coisa dieferente é a forma de referenciar itens de listas compostas conforme abaixo:
+    Ex lista[0][0] => tratase do item 0 da lista 0 = 'João'
+        lista[1][1] => trata-se do item 1 da lista 1 = 32
+        lista[2][0] => trata-se do item 0 da lista 2 = 'Maria'
+        lista[3] => trata-se de toda a lista 3 = ['Felipe', 30]
+
+Podemos, também limpar o conteúdo de uma lista com o mód .clear(). Esse módulo não leva argumento.
+
