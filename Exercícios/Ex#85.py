@@ -20,6 +20,7 @@ print(f'Os números pares são:', end=' ')
 for i in coleção[0]:
     print(i, end=' ')
 print()
+
 print(f'Os números impares são:', end=' ')
 for i in coleção[1]:
     print(i, end=' ')

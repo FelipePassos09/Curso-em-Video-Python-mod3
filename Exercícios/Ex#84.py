@@ -11,30 +11,32 @@ Faça um programa que leia nome e peso de várias pessoas, guardando tudo como u
 
 pessoas = list()
 pessoa = []
+leves = pesadas = 0
 
 while True:
   pessoa.append(str(input('Informe o nome da pessoa: \n')))
-  pessoa.append(float(input('Informe 0 peso da pessoa: \n')))
+  pessoa.append(float(input('Informe o peso da pessoa: \n')))
+  if len(pessoas) == 0:
+    leves = pesadas = pessoa[1]
+  else:
+    if pessoa[1] > pesadas:
+        pesadas = pessoa[1]
+    if pessoa[1] < leves:
+        leves = pessoa[1]
+        
+
   pessoas.append(pessoa[:])
   cont = str(input('Quer continuar? [ S/N ]\n')).strip().upper()
   pessoa.clear()
   if cont == 'N':
     break
 
-leves = []
-pesadas = []
-for p in pessoas:
-    if p[1] >= 90:
-        pesadas.append(p)
-    if p[1] <= 70:
-        leves.append(p)
-
-print(pessoas)
-
 print(f'A) Foram cadastradas {len(pessoas)} pessoas.')
 print(f'B) As pessoas mais pesadas foram: ')
-for p in pesadas:
-    print(p)
+for p in pessoas:
+    if p[1] == pesadas:
+        print(f'{p[0].capitalize()} com {p[1]}Kg.')
 print(f'C) As pessoas mais leves foram: ')
-for p in leves:
-    print(p)
+for p in pessoas:
+    if p[1] == leves:
+        print(f'{p[0].capitalize()} com {p[1]}Kg.')
