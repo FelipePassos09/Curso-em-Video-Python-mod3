@@ -23,7 +23,7 @@ while True:
     aluno.insert(2, (aluno[1][0]+aluno[1][1])/2)
     
     
-    cont = str(input('Quer continuar? [ S/N] \n')).strip().upper()
+    cont = str(input('Quer continuar? [ S/N] \n')).strip().upper()  
     boletim.append(aluno[:])
     aluno = []
     if cont == 'N':

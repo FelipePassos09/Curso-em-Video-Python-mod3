@@ -69,3 +69,34 @@ Outra coisa dieferente é a forma de referenciar itens de listas compostas confo
 
 Podemos, também limpar o conteúdo de uma lista com o mód .clear(). Esse módulo não leva argumento.
 
+Aula#19 - Dicionários:
+
+Dicionários são outro formato de estrutura composta caracterizado pelo uso de chaves '{}' como delimitadores. A função que cria um dicionário é dict(). Elas perimitem a associação de seus valores internos a partir de um nome, como nas váriáveis, porém mantendo alguns dos comportamentos de listas.
+    Ex. dic = {'nome':'valor', 'nome2':'valor2'}
+
+        Para nos referirmos à um item de um dicionário apenas colocamos a referência de seu nome, semelhante ao formato de lista:
+            Ex. print(dic['nome']) >> valor
+
+Possuem uma maneira diferente de serem referenciadas e cada elemento possui uma nomenclatura para que possamos ter interações mais simples com eles:
+    Chaves (keys): são os nomes de cada valor.
+    Valor (value): são os valores propriamente ditos.
+    Item (item): é o conjunto key+value.
+
+Podemos inserir itens em um dicionário apenas declarando-os, seja em uma substituição quanto em uma adição. No caso dos dicionários não é possivel o uso de .append()
+    Ex. dic['nome3'] = 'valor3'
+
+Podemos combinar os dicionários com tuplas e listas, tanto sendo um elemento de cada uma dessas estruturas como sendo portador das mesmas:
+    lista = [dic{'nome':'valor'}]
+    dic = {'nome': ['valor1', 'valor2']}
+    dic = {'valor': ('valor1', 'valor2')}
+    tupla = ({'nome':'valor','nome2':'valor2'})
+        * Cuidado, tanto listas quanto tuplas mantém suas características então podem gerar bug's devido suas limitações.
+
+Para se trabalhar com dicionários podemos usar todos os elementos vistos anteriormente porém com algumas exceções:
+    * As funções de fatiamento [:] não são aplicáveis aos dicionários e nesse caso utilizamos a função .copy para realizar a cópia de alguma informação.
+    * A maneira de ordená-los é diferente, neste caso podemos utilizar a função sorted(), por padrão ela realiza a ordenação pela inicial de cada key, então precisamos atibuir o parâmetro que será utilizado para realizar a ordenação. (a ordenação de dicionários é pouco usual, entretanto)
+    * Eles podem, facilmente, ser alterados, porém cada item leva apenas um valor por padrão, para que se possa atribuir mais de um valor é necessário combinar uma lista ou tupla para tal.
+
+Para remover elementos usamos a função del:
+    del dados['nome']
+
