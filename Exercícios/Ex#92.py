@@ -17,9 +17,16 @@ cad = {
 cad['idade'] = atual - int(input('Ano de nascimento: \n'))
 
 if cad['ctps'] != 0:
-  cad['ano.c'] = date.today().year
+  cad['ano.contrato'] = date.today().year
   cad['salario'] = float(input('Diga o salário: \n'))
-  cad['apos'] = cad['idade'] + 35
+  cad['aposentadoria'] = cad['idade'] + 35
+  
+  for k, v in cad.items():
+      print(f'O {k} tem {v}.')
 
+else:
+    for k, v in cad.items():
+        print(f'O {k} tem {v}.')
+ 
 
-
+    
