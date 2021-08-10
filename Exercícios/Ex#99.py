@@ -28,5 +28,10 @@ maior([3,5,4,9,12])
 maior([5,2,4])
 maior([])
 maior(range(2,36,2))
-
-
+lista = []
+while True:
+  lista.append(int(input('Diga um número:\n')))
+  cont = str(input('Quer Parar?\n')).upper()
+  maior(lista)
+  if cont == 'S':
+    break
