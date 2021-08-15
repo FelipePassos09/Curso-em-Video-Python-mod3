@@ -100,3 +100,24 @@ Para se trabalhar com dicionários podemos usar todos os elementos vistos anteri
 Para remover elementos usamos a função del:
     del dados['nome']
 
+Aula#21 - Listas (Parte2)
+
+    Escopo de variáveis, docstrings, Interactive Help, Argumentos operacionais, retorno de resultados
+
+Interactive Help
+    É chamado a partir do método help(). Podemos també, imprimir o docinterno da função com a seguinte grafia print(function.__doc__).
+
+Docstrings
+    A docstring é a ducumentação referente à função relacionada. Usamos docstrings para documentar nossas próprias funções para facilitar a manutenção do cód por outras pessoas ou por nós mesmos. Para definirmos as docstrings basta abrir tres aspas duplas logo abaixo à chamada da função.
+
+Parametros opcionais
+    Podemos definir um valor padrão para uma variáevl dentro do escopo de uma função, de modo que, quando não houver a informação para aquela variável a função não irá "quebrar". Para tal basta atribuir um valor dentro do escopo da função quando for declarada. Ex: def soma(a=0, b=0, c=0).
+
+Escopo de declarações
+    Resume-se ao local e características de alocação de variáveis e/ou funções.
+        Escopo Global: diz-se dos valores que estão contidos dentro do programa principal e, portanto, podem ser acessadas por todas as funções e elementos do programa.
+        Escopo Local: diz-se de valores contidos dentro de módulos, subprogramas ou funções. Nesse caso somente funcionam dentro de seus respectivos locais.
+            *No python, caso seja definida uma variável de igual nome de um global dentro de um local, será criada uma nova variável dentro do escopo local onde está contida.
+            
+Retorno de resultados
+    É caracterizado pelo uso da palavra reservada 'return'. Nesse caso, a função, ao invés de imprimir ou executar uma ação, retornnará um valor que, nesse caso, pode ser utilizado dentro de outros escopos com maior flexibilidade.
