@@ -105,7 +105,7 @@ Aula#21 - Listas (Parte2)
     Escopo de variáveis, docstrings, Interactive Help, Argumentos operacionais, retorno de resultados
 
 Interactive Help
-    É chamado a partir do método help(). Podemos també, imprimir o docinterno da função com a seguinte grafia print(function.__doc__).
+    É chamado a partir do método help(). Podemos também, imprimir o docinterno da função com a seguinte grafia print(function.__doc__).
 
 Docstrings
     A docstring é a ducumentação referente à função relacionada. Usamos docstrings para documentar nossas próprias funções para facilitar a manutenção do cód por outras pessoas ou por nós mesmos. Para definirmos as docstrings basta abrir tres aspas duplas logo abaixo à chamada da função.
