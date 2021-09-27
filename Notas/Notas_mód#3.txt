@@ -121,3 +121,8 @@ Escopo de declarações
             
 Retorno de resultados
     É caracterizado pelo uso da palavra reservada 'return'. Nesse caso, a função, ao invés de imprimir ou executar uma ação, retornnará um valor que, nesse caso, pode ser utilizado dentro de outros escopos com maior flexibilidade.
+    
+Módulos e Pacotes
+   Para criar um pacote basta criar a pasta, criar um arquivo nomeado '__init__.py' e fazer o código todo dentro deste arquivo para que possa ser lido como um pacote.
+   
+   
